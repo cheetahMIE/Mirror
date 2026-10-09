@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f3efe7">
+<title>镜中自己｜从关系看见自我</title>
+<style>
+:root{--paper:#f3efe7;--ink:#242522;--muted:#77766f;--line:#d8d2c7;--accent:#7a493d;--accent2:#c7a18a;--panel:#fbf9f4;--soft:#e8e0d5;--green:#68705c;--serif:"Iowan Old Style","Palatino Linotype","Book Antiqua","Noto Serif SC","Songti SC",serif;--sans:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.7}button,input{font:inherit}button{cursor:pointer}.shell{max-width:880px;margin:0 auto;padding:24px 22px 64px}.topbar{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--line);padding:7px 0 17px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}.brand{font-family:var(--serif);font-size:18px;letter-spacing:.08em;color:var(--ink)}.hero{padding:clamp(54px,10vw,100px) 0 48px;max-width:720px}.eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);font-weight:700}.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(44px,8vw,76px);letter-spacing:.04em;line-height:1.15;margin:18px 0 22px}.hero h1 span{display:block;color:var(--accent);font-style:italic;font-size:.64em;margin-top:10px;letter-spacing:.06em}.lead{font-family:var(--serif);font-size:clamp(18px,2.5vw,23px);line-height:1.9;max-width:650px;color:#494943}.hero-note{margin-top:28px;border-left:2px solid var(--accent2);padding-left:16px;color:var(--muted);font-size:13px;max-width:520px}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}.btn{border:1px solid var(--ink);background:var(--ink);color:var(--panel);padding:13px 20px;min-height:48px;letter-spacing:.04em;transition:.2s}.btn:hover{background:var(--accent);border-color:var(--accent)}.btn.secondary{background:transparent;color:var(--ink);border-color:var(--line)}.btn.secondary:hover{border-color:var(--ink);background:var(--soft)}.manifesto{display:grid;grid-template-columns:1fr 1fr;gap:26px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:25px 0;margin:10px 0 34px}.manifesto h3{font-family:var(--serif);font-size:20px;font-weight:500;margin:0 0 7px}.manifesto p{font-size:13px;color:var(--muted);margin:0}.section-label{font-size:11px;letter-spacing:.18em;color:var(--accent);text-transform:uppercase;font-weight:700}.panel{background:var(--panel);border:1px solid var(--line);padding:clamp(22px,5vw,42px);box-shadow:0 12px 35px #30271a08}.hidden{display:none!important}.progress-wrap{margin-bottom:28px}.progress-meta{display:flex;justify-content:space-between;gap:12px;font-size:12px;color:var(--muted);margin-bottom:9px}.progress{height:3px;background:var(--soft);overflow:hidden}.progress>div{height:100%;width:0;background:var(--accent);transition:width .25s}.stage{font-size:11px;letter-spacing:.15em;color:var(--accent);font-weight:700}.question-number{font-family:var(--serif);font-size:14px;color:var(--muted);margin:17px 0 7px}.question-title{font-family:var(--serif);font-weight:500;font-size:clamp(24px,4.5vw,34px);line-height:1.5;margin:0 0 10px}.question-context{color:var(--muted);font-size:14px;margin:0 0 25px;max-width:650px}.options{display:grid;gap:10px}.option{display:flex;align-items:flex-start;gap:14px;text-align:left;padding:16px 17px;border:1px solid var(--line);background:transparent;color:var(--ink);width:100%;transition:.18s}.option:hover{border-color:#a88a79;background:#f5f0e8}.option.selected{border-color:var(--accent);background:#eee3d8;box-shadow:inset 3px 0 var(--accent)}.option .letter{font-family:var(--serif);color:var(--accent);font-size:17px;min-width:18px}.option .option-text{font-size:14px;line-height:1.7}.nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:28px}.nav .btn{min-width:120px}.microcopy{font-size:12px;color:var(--muted)}.result-head{padding:30px 0 24px;border-bottom:1px solid var(--line)}.result-head h2{font-family:var(--serif);font-weight:500;font-size:clamp(34px,6vw,52px);line-height:1.3;margin:12px 0}.result-subtitle{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--accent)}.result-intro{font-size:15px;color:#55544e;max-width:670px}.result-section{padding:25px 0;border-bottom:1px solid var(--line)}.result-section h3{font-family:var(--serif);font-size:23px;font-weight:500;margin:0 0 10px}.result-section p{margin:8px 0;color:#4f4e48}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}.chip{border:1px solid var(--line);padding:5px 10px;font-size:12px;color:var(--accent);background:#f7f1e9}.score-list{display:grid;gap:15px;margin-top:18px}.score-row{display:grid;grid-template-columns:120px 1fr 38px;align-items:center;gap:12px;font-size:13px}.bar{height:5px;background:var(--soft)}.bar span{display:block;height:100%;background:var(--accent2)}.reflection{background:#eee7dc;padding:22px;margin-top:18px;border-left:2px solid var(--accent)}.reflection h4{font-family:var(--serif);font-size:19px;font-weight:500;margin:0 0 10px}.reflection p{margin:8px 0;font-size:14px}.disclaimer{font-size:12px;color:var(--muted);margin-top:24px}.footer{margin-top:45px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px;color:var(--muted);font-size:11px;letter-spacing:.04em}.notice{font-size:13px;color:var(--muted);margin:12px 0 0}.error{color:#963d2e;font-size:13px;margin-top:12px}.smallcaps{font-size:10px;letter-spacing:.18em;color:var(--muted);text-transform:uppercase}@media(max-width:600px){.shell{padding:16px 16px 42px}.manifesto{grid-template-columns:1fr;gap:18px}.score-row{grid-template-columns:95px 1fr 30px;gap:8px}.nav .btn{min-width:0;padding:12px 14px}.footer{flex-direction:column}.hero{padding-top:58px}}
+@media print{body{background:white}.shell{max-width:none;padding:0}.topbar,.actions,.footer .no-print,.no-print{display:none!important}.panel{border:0;box-shadow:none;padding:0}.result-section{break-inside:avoid}.hero{padding:20px 0}.result-head h2{font-size:32px}}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar"><div class="brand">镜中自己</div><div>关系 · 反照 · 自我形成</div></header>
+
+  <section id="intro">
+    <div class="hero">
+      <div class="eyebrow">A reflective inquiry · 第一版</div>
+      <h1>镜中自己<span>从关系看见自我</span></h1>
+      <p class="lead">我们以为自己是独自长成的。后来才发现，某些沉默、某些解释、某些靠近或退后，曾经是为了在一段关系里安然度过。</p>
+      <p class="lead">这不是给你贴上一个类型标签，而是借由语言、选择与关系中的反应，照见那些可能陪你走到今天的习惯。</p>
+      <div class="hero-note">请以真实的第一反应作答，而不是选择你认为更成熟、更正确的答案。这里没有标准人格，也没有需要被判定的对错。</div>
+      <div class="actions"><button class="btn" id="startBtn">开始自我探索 <span aria-hidden="true">↗</span></button><button class="btn secondary" id="aboutBtn">了解测试方式</button></div>
+    </div>
+    <div id="about" class="manifesto hidden">
+      <div><h3>看见反应，不急着定义</h3><p>题目以生活情境为入口，观察你在表达、冲突、被期待和关系变化中的倾向。</p></div>
+      <div><h3>探索形成史，不替你下结论</h3><p>结果是自我反思的起点，不是临床评估，也不能单凭回答断定童年经历或家庭关系。</p></div>
+      <div><h3>你的答案留在这台设备</h3><p>本版本在浏览器本地计算结果，不会自动上传答案或要求注册。请避免在公共设备上留下测试页面。</p></div>
+      <div><h3>约 5–8 分钟</h3><p>共 18 道情境题。请按你通常会做的选择作答，而不是按理想中的自己作答。</p></div>
+    </div>
+    <div class="manifesto">
+      <div><h3>01 / 语言偏好</h3><p>你如何说出需要，如何处理不被理解的时刻。</p></div>
+      <div><h3>02 / 行为与反射</h3><p>压力来临时，你倾向靠近、解释、控制，还是先退一步。</p></div>
+      <div><h3>03 / 关系形成史</h3><p>从童年情境与人际经验，观察你可能学会的保护方式。</p></div>
+      <div><h3>04 / 镜中画像</h3><p>看见惯性背后的功能，也看见它可能带来的代价。</p></div>
+    </div>
+  </section>
+
+  <section id="quiz" class="hidden">
+    <div class="panel">
+      <div class="progress-wrap"><div class="progress-meta"><span id="progressText">第 1 / 18 题</span><span id="progressPercent">6%</span></div><div class="progress"><div id="progressBar"></div></div></div>
+      <div class="stage" id="stageLabel"></div>
+      <div class="question-number" id="questionNumber"></div>
+      <h2 class="question-title" id="questionTitle"></h2>
+      <p class="question-context" id="questionContext"></p>
+      <div class="options" id="options"></div>
+      <div class="error hidden" id="errorMsg">请先选择一个最接近你通常反应的选项。</div>
+      <div class="nav"><button class="btn secondary" id="prevBtn">← 上一题</button><span class="microcopy">凭直觉作答即可</span><button class="btn" id="nextBtn">下一题 →</button></div>
+    </div>
+  </section>
+
+  <section id="result" class="hidden">
+    <div class="panel">
+      <div class="smallcaps">Your reflection · 你的关系画像</div>
+      <div id="report"></div>
+      <div class="actions no-print"><button class="btn" id="printBtn">打印 / 保存为 PDF</button><button class="btn secondary" id="restartBtn">重新作答</button><button class="btn secondary" id="copyBtn">复制结果摘要</button></div>
+      <p class="notice no-print" id="copyNotice" aria-live="polite"></p>
+      <p class="disclaimer">重要说明：本测试是自我探索工具，不是经过临床验证的心理测量量表，不提供诊断。结果仅描述本次答案呈现的倾向，不能证明某种家庭经历导致了某种人格，也不应取代专业心理支持。</p>
+    </div>
+  </section>
+  <footer class="footer"><span>镜中自己 · 第一版</span><span>不是为了把自己归类，而是重新理解自己。</span></footer>
+</div>
+<script>
+const dimensions = {
+  expression: {name:"表达与被理解", short:"表达", desc:"你如何让内在经验被别人看见"},
+  protection: {name:"自我保护方式", short:"保护", desc:"不安出现时，你用什么方式维持安全感"},
+  connection: {name:"关系中的靠近", short:"靠近", desc:"你如何处理亲密、距离与回应"},
+  expectation: {name:"对期待的回应", short:"期待", desc:"你如何面对评价、责任与他人的需要"},
+  reflection: {name:"自我觉察与弹性", short:"觉察", desc:"你是否能暂停惯性，重新选择"}
+};
+const questions = [
+{stage:"第一章 · 语言偏好",title:"当你很在意一件事，却担心说出来会显得矫情时，你更可能……",context:"想象这不是一次正式谈话，而是和熟悉的人相处时的日常瞬间。",opts:[
+["把感受整理好，等到能讲清楚时再说",{expression:2,protection:1,reflection:1}],
+["用玩笑或轻描淡写带过去，看看对方会不会察觉",{expression:0,protection:2,connection:1}],
+["直接说出来，即使语句不够完整",{expression:2,connection:1,reflection:1}],
+["先判断对方能不能接住，再决定要透露多少",{expression:1,protection:2,reflection:1}]]},
+{stage:"第一章 · 语言偏好",title:"别人误解了你的意思，你最先在意的通常是……",context:"不是谁对谁错，而是误解发生时，什么最容易牵动你。",opts:[
+["把事实和逻辑重新解释清楚",{expression:2,protection:1,reflection:1}],
+["对方是否因此觉得我不好、不值得信任",{connection:2,protection:1}],
+["算了，不想把事情弄得更复杂",{protection:2,expectation:1}],
+["我为什么这么在意这次误解，先观察自己的反应",{reflection:2,expression:1}]]},
+{stage:"第一章 · 语言偏好",title:"当你需要帮助时，你更自然的做法是……",context:"选择你在疲惫、忙乱或不知所措时最常见的方式。",opts:[
+["把需求讲具体，告诉对方怎样帮我最有效",{expression:2,reflection:1}],
+["先自己处理，真的撑不住才开口",{protection:2,expectation:1}],
+["先暗示一下，希望亲近的人能主动发现",{connection:2,expression:0}],
+["先确认对方不会觉得麻烦，再提出请求",{connection:1,expectation:2}]]},
+{stage:"第二章 · 行为与反射",title:"一场重要的对话突然变得紧张，对方沉默下来。你会……",context:"注意你的第一反应，不是你事后认为应该采取的做法。",opts:[
+["继续解释，尽快消除误会",{protection:2,expression:1}],
+["也安静下来，等情绪降下来再说",{protection:1,reflection:1}],
+["追问对方在想什么，无法忍受悬而未决",{connection:2,protection:1}],
+["先留意自己是否正在急着得到一个答案",{reflection:2,connection:1}]]},
+{stage:"第二章 · 行为与反射",title:"当计划被打乱、事情不再受控时，你通常会……",context:"例如临时变更、别人没有按约定完成事情，或局面突然不明朗。",opts:[
+["马上列出步骤，重新掌握进度",{protection:2,expectation:1}],
+["先处理最急的部分，允许其他事暂时悬着",{reflection:2,expectation:1}],
+["容易烦躁，因为我不想替别人收拾残局",{expectation:2,protection:1}],
+["先看看发生了什么，再决定是否需要介入",{reflection:2,protection:0}]]},
+{stage:"第二章 · 行为与反射",title:"当别人对你失望时，你最容易做的是……",context:"尤其是你重视对方、又不确定自己是否真的做错了的时候。",opts:[
+["尽快补救，证明自己仍然可靠",{expectation:2,connection:1}],
+["解释自己当时的处境，希望对方理解",{expression:2,connection:1}],
+["退开一点，避免继续面对那种感觉",{protection:2,connection:0}],
+["分辨对方的失望、我的责任和我的想象",{reflection:2,expression:1}]]},
+{stage:"第二章 · 行为与反射",title:"你发现自己正在生气，却还没准备好说原因。你更可能……",context:"愤怒有时是边界被碰到的信号，也可能遮住其他感受。",opts:[
+["先把情绪压下去，等自己恢复理性",{protection:2,expectation:1}],
+["直接表达不满，不想假装没事",{expression:2,reflection:1}],
+["表面没事，但会在之后减少互动",{protection:2,connection:1}],
+["试着辨认生气下面是否还有委屈、害怕或失望",{reflection:2,expression:1}]]},
+{stage:"第三章 · 童年情境",title:"小时候，你难过得想哭，大人却说「这有什么好哭的」。你更像会……",context:"这是一道情境想象题，不要求你真的经历过同一件事。若没有类似经验，请选最接近你可能的反应。",opts:[
+["忍住眼泪，告诉自己这没什么",{protection:2,expectation:1}],
+["努力解释为什么难过，希望对方明白",{expression:2,connection:1}],
+["转身躲起来，等情绪过去再出现",{protection:2,connection:0}],
+["即使难过，也知道自己的感受并不因此失效",{reflection:2,expression:1}]]},
+{stage:"第三章 · 童年情境",title:"当你带回一件做得不够好的作品或成绩时，你最担心的可能是……",context:"请留意你害怕的是结果本身，还是结果会改变别人看待你的方式。",opts:[
+["别人觉得我不够努力、不够可靠",{expectation:2,protection:1}],
+["别人会失望，关系因此变得疏远",{connection:2,expectation:1}],
+["我自己无法接受没有做到最好",{expectation:2,reflection:0}],
+["这只是一次结果，我可以看看哪里需要调整",{reflection:2,protection:0}]]},
+{stage:"第三章 · 童年情境",title:"如果家里气氛紧绷，大人没有说明发生什么，你可能会……",context:"这里关注的是你会如何适应不确定的气氛，而不是判断家庭好坏。",opts:[
+["观察每个人的脸色，尽量别添麻烦",{protection:2,connection:1}],
+["主动缓和气氛，希望大家恢复正常",{connection:2,expectation:1}],
+["躲回自己的空间，不想卷入其中",{protection:2,reflection:1}],
+["知道气氛不一定与我有关，先维持自己的节奏",{reflection:2,protection:0}]]},
+{stage:"第三章 · 童年情境",title:"当你做出一个与家人期待不同的选择时，你更可能……",context:"例如兴趣、升学、生活方式，或你认为重要但家人未必理解的决定。",opts:[
+["先取得认可，尽量让决定看起来合理",{expectation:2,connection:1}],
+["坚持自己的决定，但会反复解释来减少冲突",{expression:2,expectation:1}],
+["先不说，等事情确定了再告诉他们",{protection:2,expectation:1}],
+["承认他们可能不赞同，同时承担自己的选择",{reflection:2,expression:1}]]},
+{stage:"第三章 · 童年情境",title:"如果你曾经被称赞「懂事」，你觉得这个词最接近……",context:"没有标准答案；同一个词可能带来温暖，也可能意味着某种角色。",opts:[
+["我能体谅别人，也愿意承担责任",{expectation:1,connection:1,reflection:1}],
+["我习惯先照顾别人的情绪，再处理自己的",{expectation:2,protection:1}],
+["我很少给别人添麻烦，所以大家比较放心",{protection:2,expectation:1}],
+["我希望懂事不是压抑自己，也包括表达需要",{reflection:2,expression:1}]]},
+{stage:"第四章 · 人际关系",title:"亲近的人连续几天回复冷淡，你通常会……",context:"假设你还不知道原因，也没有直接证据表明关系出了问题。",opts:[
+["反复回想自己是否说错了什么",{connection:2,protection:1}],
+["主动问清楚，不想靠猜测维持关系",{expression:2,reflection:1}],
+["也减少联系，先保护自己的情绪",{protection:2,connection:0}],
+["提醒自己可能有多种解释，等合适时机沟通",{reflection:2,connection:1}]]},
+{stage:"第四章 · 人际关系",title:"当朋友把烦恼告诉你，你第一时间会……",context:"想象对方需要陪伴，但没有明确说希望你做什么。",opts:[
+["分析问题，提出可以执行的解决方法",{expectation:1,protection:1}],
+["认真听，让对方先把感受说完",{connection:2,expression:1}],
+["努力帮忙，哪怕自己已经有些疲惫",{expectation:2,connection:1}],
+["先问对方现在更需要倾听还是建议",{reflection:2,expression:1}]]},
+{stage:"第四章 · 人际关系",title:"一段关系里，你发现自己总是先让步。你更可能……",context:"关注这种做法出现的原因，以及你是否有空间选择其他方式。",opts:[
+["不想争执，维持关系比争一口气重要",{connection:2,protection:1}],
+["觉得自己应该成熟一点，多承担一些",{expectation:2,protection:1}],
+["忍到某个时刻突然疏远或爆发",{protection:2,expression:0}],
+["尝试说出底线，也愿意听对方的需要",{reflection:2,expression:1}]]},
+{stage:"第四章 · 人际关系",title:"别人称赞你时，你内心更接近哪种反应？",context:"不是你会怎样礼貌回应，而是心里真实出现的感受。",opts:[
+["开心，但会想自己是否真的配得上",{expectation:2,protection:1}],
+["自然接受，也能享受被看见",{reflection:2,connection:1}],
+["有点不自在，想赶快把话题带过去",{protection:2,expression:0}],
+["很在意这份肯定，希望关系因此更亲近",{connection:2,expectation:1}]]},
+{stage:"第五章 · 重新看见自己",title:"当你意识到某种习惯正在让自己疲惫时，你通常会……",context:"例如总是解释、过度负责、回避冲突，或不断确认别人是否在意你。",opts:[
+["告诉自己下次不要这样，靠意志改变",{expectation:1,protection:1}],
+["先理解这个习惯曾经在保护我什么",{reflection:2,protection:1}],
+["觉得自己就是这样，很难真正改变",{protection:2,reflection:0}],
+["找一个较小的场景，练习新的回应方式",{reflection:2,expression:1}]]},
+{stage:"第五章 · 重新看见自己",title:"在一段关系中，你最希望自己慢慢学会的是……",context:"选择你目前最需要练习的方向，不必选择听起来最理想的答案。",opts:[
+["说出需要，不把猜测当成沟通",{expression:2,connection:1}],
+["不必靠表现良好来证明自己值得被爱",{expectation:2,reflection:1}],
+["亲近别人时仍然保留自己的边界",{protection:1,connection:1,reflection:1}],
+["在情绪出现时暂停一下，再决定怎么回应",{reflection:2,protection:1}]]}
+];
+
+let current = 0;
+let answers = Array(questions.length).fill(null);
+const $ = id => document.getElementById(id);
+function show(id){$(id).classList.remove("hidden")}
+function hide(id){$(id).classList.add("hidden")}
+$("aboutBtn").addEventListener("click",()=>{ $("about").classList.toggle("hidden"); $("aboutBtn").textContent=$("about").classList.contains("hidden")?"了解测试方式":"收起测试说明"; });
+$("startBtn").addEventListener("click",()=>{hide("intro");show("quiz");renderQuestion();window.scrollTo({top:0,behavior:"smooth"});});
+$("prevBtn").addEventListener("click",()=>{if(current>0){current--;renderQuestion();}});
+$("nextBtn").addEventListener("click",()=>{
+  if(answers[current]===null){show("errorMsg");return}
+  hide("errorMsg");
+  if(current<questions.length-1){current++;renderQuestion();window.scrollTo({top:0,behavior:"smooth"});}
+  else {renderResult();hide("quiz");show("result");window.scrollTo({top:0,behavior:"smooth"});}
+});
+function renderQuestion(){
+ const q=questions[current], total=questions.length;
+ $("progressText").textContent=`第 ${current+1} / ${total} 题`;
+ $("progressPercent").textContent=`${Math.round((current+1)/total*100)}%`;
+ $("progressBar").style.width=`${(current+1)/total*100}%`;
+ $("stageLabel").textContent=q.stage;
+ $("questionNumber").textContent=`QUESTION ${String(current+1).padStart(2,"0")}`;
+ $("questionTitle").textContent=q.title;
+ $("questionContext").textContent=q.context;
+ $("options").innerHTML="";
+ q.opts.forEach((o,i)=>{
+   const b=document.createElement("button"); b.type="button"; b.className="option"+(answers[current]===i?" selected":"");
+   b.setAttribute("aria-pressed",answers[current]===i?"true":"false");
+   const letter=document.createElement("span");letter.className="letter";letter.textContent=["A","B","C","D"][i];
+   const txt=document.createElement("span");txt.className="option-text";txt.textContent=o[0];
+   b.append(letter,txt);b.addEventListener("click",()=>{answers[current]=i;renderQuestion();hide("errorMsg");});$("options").appendChild(b);
+ });
+ $("prevBtn").disabled=current===0;$("prevBtn").style.opacity=current===0?".45":"1";
+ $("nextBtn").textContent=current===total-1?"生成我的关系画像 →":"下一题 →";
+}
+function calculate(){
+ const scores={expression:0,protection:0,connection:0,expectation:0,reflection:0};
+ answers.forEach((a,qi)=>{const map=questions[qi].opts[a][1];Object.entries(map).forEach(([k,v])=>scores[k]+=v)});
+ const max=questions.length*2;
+ const pct={};Object.keys(scores).forEach(k=>pct[k]=Math.round(scores[k]/max*100));
+ return {scores,pct};
+}
+function getPattern(scores){
+ const ranked=Object.entries(scores).sort((a,b)=>b[1]-a[1]);
+ const first=ranked[0][0], second=ranked[1][0];
+ const names={
+ expression:["清晰表达的寻找者","你倾向借由理解、命名与解释，让内在经验有机会被看见。表达对你来说不只是传递信息，也可能是恢复秩序、确认彼此是否仍在同一段对话里。"],
+ protection:["谨慎的自我守望者","当关系或情境变得不确定，你可能先观察风险、收住感受，或把自己带回一个较可控的位置。这种谨慎可能曾帮助你减少受伤，但有时也会让别人难以知道你真正需要什么。"],
+ connection:["关系中的感应者","你对互动中的温度、回应与距离可能较敏锐。你重视关系里的连结，也可能比自己愿意承认的更容易被冷淡、沉默或不确定牵动。"],
+ expectation:["责任的承担者","你可能习惯留意他人的期待、把事情做好，并在关系出现问题时先检视自己能否补救。可靠是你的资源；但如果责任总是自动落到自己身上，疲惫也容易被你当成理所当然。"],
+ reflection:["主动观察的探索者","你在答案中呈现出一定的暂停与观察倾向：试着理解反应从何而来，而不只急着消除不舒服。这种觉察能为改变创造空间，但也不必把每种情绪都变成一道需要立刻解开的题。"]
+ };
+ const bridge={
+ expression:"你可能更愿意通过说清楚来建立安全感；当对方无法回应时，解释也可能变成一种自我保护。",
+ protection:"你可能先保护自己，再决定是否靠近；别人看到的平静，不一定等于你内心没有波动。",
+ connection:"你可能通过关系的反馈感知自己是否被接纳；练习直接询问，有时比独自解读细节更能减少消耗。",
+ expectation:"你可能通过负责、体谅或表现可靠来维持稳定；值得留意的是，你是否也允许自己成为被照顾的人。",
+ reflection:"你可能比较容易看见自己的模式；下一步不一定是想得更透，而是允许自己在安全的小情境里尝试不同做法。"
+ };
+ return {first,second,title:names[first][0],desc:names[first][1],secondary:bridge[second],secondaryName:dimensions[second].name};
+}
+function renderResult(){
+ const {scores,pct}=calculate(), p=getPattern(scores);
+ const max=Math.max(...Object.values(scores));
+ const sections=[
+ ["你可能习惯怎样保护自己",{
+ expression:"你可能会借由解释、厘清事实或寻找准确措辞，让自己不至于被误解。可以留意：当对方暂时听不懂时，你是否会不断补充说明，直到自己精疲力竭？",
+ protection:"你可能会先把感受收起来，观察局面是否安全，再决定要不要透露更多。这能帮助你留有余地；同时，也值得练习让可信任的人知道你正在经历什么。",
+ connection:"你可能会通过观察回应、语气和互动变化来判断关系是否稳定。当线索模糊时，直接询问和等待事实出现，可能比反复猜测更温柔地对待自己。",
+ expectation:"你可能会把「做好」「不添麻烦」或「让别人放心」当成重要的安全策略。请留意，承担责任和承担所有责任，并不是同一回事。",
+ reflection:"你可能已经能在一些时刻看见自己的反应，而不是完全被反应带走。也请允许自己偶尔没有答案；觉察不需要变成新的完美标准。"}[p.first]],
+ ["这种方式可能从哪里形成", "这些回答不能证明你的童年或家庭发生过什么。它们只能提供一个值得探索的假设：我们有时会在早期关系中学会，哪些情绪容易被接纳、哪些需求最好自己处理，以及怎样做比较不容易引发冲突。若某种做法曾经让你更安全，它在当时可能有其功能；今天的你则可以重新判断，它是否仍适合现在的生活。"],
+ ["它带给你的资源与代价",{
+ expression:"表达与解释的能力，能帮助你厘清复杂处境、修复误会，也让关系有机会更真实。代价可能是过度解释、过分依赖对方是否理解，或把「讲清楚」误当成「必须让对方认同」。",
+ protection:"谨慎让你有能力观察局面、保留边界，不必把自己交给每一次情绪波动。代价可能是把求助拖得太晚，或在别人还没伤害你之前，就先退出了关系。",
+ connection:"你对关系细节的敏感，可能让你善于体察别人、建立亲密。代价可能是过度解读沉默、把距离看成拒绝，或为了维持连结而忽略自己的边界。",
+ expectation:"责任感、执行力与体谅，是你可以信赖的资源。代价可能是把价值和表现绑在一起，或觉得只有自己有用、懂事、可靠时，才比较值得被需要。",
+ reflection:"觉察能帮助你不把习惯当成命运，也更有机会做出新的选择。代价可能是把自己分析得太多，甚至用理解代替行动。"}[p.first]],
+ ["可以开始练习的一小步",{
+ expression:"下一次想解释很多时，先用一句话说出核心感受或需要：「这件事让我有点失落，我想先让你知道。」说完后，给对话一点空间。",
+ protection:"选择一个风险较低、值得信任的人，试着透露一件小事，而不是等到自己完全整理好才开口。你可以保留边界，也可以让别人靠近一点。",
+ connection:"当你开始猜测对方的态度时，先写下「我知道的事实」与「我推测的解释」，再决定要不要直接询问。让不确定暂时存在，不代表你不在乎。",
+ expectation:"在答应一件事前，先问自己：「这是我真心愿意承担的，还是我害怕让人失望？」即使最后仍然答应，也让这个选择更清楚地属于自己。",
+ reflection:"把一个已经看见的模式转成一次小实验：下次情绪出现时暂停十秒，辨认身体感受，再选择回应。目标不是永不重复，而是多出一点选择空间。"}[p.first]]
+ ];
+ let out=`<div class="result-head"><div class="eyebrow">你的主要关系倾向</div><h2>${p.title}</h2><div class="result-subtitle">你不是一个固定类型，而是一段仍在形成的关系故事。</div><p class="result-intro">${p.desc}</p><div class="chips"><span class="chip">次要线索：${p.secondaryName}</span><span class="chip">基于本次回答</span></div></div>`;
+ out+=`<div class="result-section"><h3>五个观察维度</h3><p>这些分数只表示你在本次情境题中选择了哪些反应，不代表人格优劣，也不是与人群比较的常模分数。</p><div class="score-list">`;
+ Object.entries(dimensions).sort((a,b)=>scores[b[0]]-scores[a[0]]).forEach(([k,d])=>{const width=Math.min(100,Math.round(scores[k]/(questions.length*2)*100));out+=`<div class="score-row"><span>${d.name}</span><div class="bar"><span style="width:${width}%"></span></div><span>${width}</span></div>`});
+ out+=`</div><p class="microcopy">条形长度为本测试内部计分的相对呈现，不是临床量表分数。</p></div>`;
+ out+=`<div class="result-section"><h3>另一条值得留意的线索</h3><p>${p.secondary}</p></div>`;
+ sections.forEach(([title,body])=>{out+=`<div class="result-section"><h3>${title}</h3><p>${body}</p></div>`});
+ out+=`<div class="reflection"><h4>留给自己的三个问题</h4><p>01　我最常使用的应对方式，曾经帮我度过什么样的时刻？</p><p>02　它今天仍然保护着我，还是也开始限制我？</p><p>03　如果我不需要立刻证明自己、保护自己或维持关系，我会想怎样回应？</p></div>`;
+ $("report").innerHTML=out;
+ window.currentSummary=`镜中自己｜关系画像：${p.title}\n主要倾向：${p.desc}\n次要线索：${p.secondaryName}。${p.secondary}\n这是一份自我探索报告，不是心理诊断。`;
+}
+$("printBtn").addEventListener("click",()=>window.print());
+$("restartBtn").addEventListener("click",()=>{answers=Array(questions.length).fill(null);current=0;hide("result");show("intro");window.scrollTo({top:0,behavior:"smooth"});});
+$("copyBtn").addEventListener("click",async()=>{
+ try{await navigator.clipboard.writeText(window.currentSummary);$("copyNotice").textContent="结果摘要已复制。你可以粘贴到自己的笔记中。"}
+ catch(e){const ta=document.createElement("textarea");ta.value=window.currentSummary;document.body.appendChild(ta);ta.select();try{document.execCommand("copy");$("copyNotice").textContent="结果摘要已复制。"}catch(_){$("copyNotice").textContent="当前浏览器不允许自动复制，请使用打印 / 保存 PDF。"}ta.remove();}
+});
+</script>
+</body>
+</html>
